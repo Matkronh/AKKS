@@ -22,7 +22,7 @@ function App() {
               <div className={styles.card}>
                 <img src={house1} className={styles.cardHouse}/>
                 <p className={styles.cardPara}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ut quia sapiente ea minima.</p>
-                <h1 className={styles.cardTitle}>Buy a Home</h1>
+                <h1 className={styles.cardTitle}>Buy a Hom3</h1>
               </div>
               <div className={styles.card}>
                 <img src={house2} className={styles.cardHouse}/>
