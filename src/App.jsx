@@ -18,11 +18,16 @@ function App() {
       <div className={styles.hero}>
         <Parallax blur={0} bgImage={bodyPicture} bgImageAlt="sky photo over some houses" strength={500}>
           <div className={styles.testdiv}>
+          </div>
+        </Parallax>
+      </div>
+      
+      <div className={styles.body}>
             <div className={styles.cardContainer}>
               <div className={styles.card}>
                 <img src={house1} className={styles.cardHouse}/>
                 <p className={styles.cardPara}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ut quia sapiente ea minima.</p>
-                <h1 className={styles.cardTitle}>Buy a Hom3</h1>
+                <h1 className={styles.cardTitle}>Buy a Home</h1>
               </div>
               <div className={styles.card}>
                 <img src={house2} className={styles.cardHouse}/>
@@ -35,12 +40,6 @@ function App() {
                 <h1 className={styles.cardTitle}>Rent a Home</h1>
               </div>
             </div>
-          </div>
-        </Parallax>
-      </div>
-      
-      <div className={styles.body}>
-
       </div>
 
       <div className={styles.footer}>
