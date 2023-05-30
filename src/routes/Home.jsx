@@ -8,20 +8,31 @@ import house2 from '../img/house2.jpg'
 import house3 from '../img/house3.jpg'
 import profilepic from '../img/mm.jpg'
 import TextCard from '../parts/TextCard';
-
+import MediaQuery from 'react-responsive'
 
 function Home(){
     return(
         <div className={styles.container}>
 
         <div className={styles.hero}>
-          <Parallax blur={0} bgImage={bodyPicture} bgImageAlt="sky photo over some houses" strength={500}>
+        <MediaQuery maxWidth={600}>
+          <Parallax blur={0} bgImage={bodyPicture} bgImageAlt="sky photo over some houses" strength={100}>
             <div className={styles.paracontainer}>
               <div className={styles.header}>
                 <img src={headerLogo} className={styles.logo}/>
               </div>
             </div>
           </Parallax>
+          </MediaQuery>
+          <MediaQuery minWidth={600}>
+          <Parallax blur={0} bgImage={bodyPicture} bgImageAlt="sky photo over some houses" strength={300}>
+            <div className={styles.paracontainer}>
+              <div className={styles.header}>
+                <img src={headerLogo} className={styles.logo}/>
+              </div>
+            </div>
+          </Parallax>
+          </MediaQuery>
         </div>
         
         <div className={styles.body}>
