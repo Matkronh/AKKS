@@ -2,29 +2,127 @@
     display: flex;
     flex-direction: column;
     background-color: #fff;
+    position: relative;
+    top: 4rem;
+}
+
+.navbar{
+    height: 4rem;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.navlogo{
+    width: 6%;
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+.navlogo:hover{
+    background-color: aquamarine;
+}
+
+.navlogotext{
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(207, 78, 27);
+}
+
+.navinvis{
+    width: 63%;
+}
+
+.navlink{
+    justify-self: right;
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    /* width: 10%; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.9rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(207, 78, 27);
+    text-align: center;
+    overflow: hidden;
+}
+
+.navlink:hover{
+    background-color: aquamarine;
+}
+
+.paracontainer{
+    height: 50svh;
 }
 
 .header{
-    width: 100%;
-    height: 25rem;
+    width: 35%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    margin: auto;
+
 }
 
-.footer{
-    height: 100svh;
-}
 
 .logo{
-    max-width: 25%;
+    max-width: 75%;
     height: auto;
     margin: auto;
     padding: 1.9rem;
     border: 1px solid black;
+    background-color: #fff;
 }
 
-.testdiv{
-    height: 50svh;
+.textContainer{
+    height: 75svh;
+    display: flex;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    justify-content: center;
+}
+
+.textCard{
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+    background-color: rgb(206, 206, 206);
+    width: 40%;
+    display: flex;
+    object-fit: contain;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid black;
+}
+
+.textCardStyle{
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.profilepicture{
+    /* max-width: 50%; */
+    margin: auto;
+    /* object-fit: contain; */
+}
+
+
+.footer{
+    height: 20svh;
+    margin-top: 5rem;
+    background-color: #fff;
+    bottom: 0;
+    position: relative;
 }
 
 .body{
@@ -34,7 +132,7 @@
 .cardContainer{
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 90%;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
@@ -93,4 +191,80 @@
     
     font-size: 1.3rem;
     font-weight: bold;
+}
+
+
+/* NEWS SECTION */
+
+.newscontainer{
+/*     height: 100svh; */
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsparagraph{
+    width: 75%;
+    height: 50%;
+    margin-top: 5rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.newsheadline{
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    width: 50%;
+    margin-left: 2rem;
+}
+
+.textNphoto{
+    display: flex;
+    overflow: hidden;
+    /* align-items: baseline; */
+}
+
+.newsparagraphtext{
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+.newsphoto{
+    max-width: 25%;
+    height: 100%;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 5%;
+    object-fit: contain;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.emptydiv{
+    height: 20svh;
+}
+
+/* Construction */
+
+.underConstruction{
+    border-radius: 2%;
+    border: 1px solid black;
+    max-width: 40%;
+    object-fit: contain;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 2rem;
+}
+
+.underconst{
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 5rem;
 }
