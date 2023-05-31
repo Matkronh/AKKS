@@ -35,7 +35,7 @@ function Home(){
           </MediaQuery>
         </div>
         
-        <div className={styles.body}>
+        <div>
               <div className={styles.cardContainer}>
                 <Card 
                 imgname={house1}
