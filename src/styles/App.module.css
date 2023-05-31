@@ -310,6 +310,7 @@
         font-size: 1.2rem;
         padding: 2rem;
     }
+    
 }
 
 @media /*LAPTOP S*/ (max-width: 1024px){
@@ -393,9 +394,68 @@
         border-radius: 50%;
         border: 1px solid black;
     }
+
+    .newscontainer{
+        /*     height: 100svh; */
+            width: 100%;
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .newsparagraph{
+            width: 75%;
+            height: 50%;
+            margin-top: 5rem;
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        
+        .newsheadline{
+            font-family: 'Ysabeau', sans-serif;
+            font-size: 3rem;
+            font-weight: bold;
+            border-bottom: 2px solid black;
+            width: 50%;
+            margin-left: 2rem;
+        }
+        
+        .textNphoto{
+            display: flex;
+            overflow: hidden;
+            /* align-items: baseline; */
+        }
+        
+        .newsparagraphtext{
+            font-family: 'Ysabeau', sans-serif;
+            font-size: 1.4rem;
+            padding: 1rem;
+            margin-left: 1rem;
+        }
+        
+        .newsphoto{
+            max-width: 25%;
+            height: 100%;
+            margin-left: 5rem;
+            margin-right: 5rem;
+            border-radius: 5%;
+            object-fit: contain;
+            overflow: hidden;
+            border: 1px solid black;
+        }
 }
 
 @media /*TABLET*/ (max-width: 768px){
+
+    .navlogo{
+        width: 14%;
+        padding-top: 0.5rem;
+        text-align: center;
+    }
+    .navinvis{
+        width: 40%;
+    }
     .navlink{
         justify-self: right;
         font-family: 'Ysabeau', sans-serif;
@@ -501,17 +561,101 @@
         margin-right: 1.5rem;
         margin-left: 1.5rem;
         background-color: rgba(206, 206, 206, 0);
-        width: 70%;
-        height: 30%;
+        width: 50%;
+        height: 10%;
         display: flex;
-        object-fit:fill;
+        object-fit:cover;
         overflow: hidden;
         border-radius: 50%;
         border: 1px solid black;
     }
+
+    .newscontainer{
+        /*     height: 100svh; */
+            width: 100%;
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .newsparagraph{
+            width: 75%;
+            height: 50%;
+            margin-top: 5rem;
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        
+        .newsheadline{
+            font-family: 'Ysabeau', sans-serif;
+            font-size: 3rem;
+            font-weight: bold;
+            border-bottom: 2px solid black;
+            width: 50%;
+            margin-left: 2rem;
+        }
+        
+        .textNphoto{
+            display: flex;
+            overflow: hidden;
+            /* align-items: baseline; */
+        }
+        
+        .newsparagraphtext{
+            font-family: 'Ysabeau', sans-serif;
+            font-size: 1.4rem;
+            padding: 1rem;
+            margin-left: 1rem;
+        }
+        
+        .newsphoto{
+            display: none;
+        }
 }
 
 @media /*MOBILE*/ (max-width: 425px){ 
+
+    .header{
+        width: 55%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    
+    }
+
+    .navlogo{
+        width: 25%;
+        padding-top: 0.5rem;
+        text-align: center;
+    }
+
+    .navlink{
+        justify-self: right;
+        font-family: 'Ysabeau', sans-serif;
+        font-size: 0.6rem;
+        padding: 0.2rem;
+        /* width: 10%; */
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        padding-top: 1.3rem;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(207, 78, 27);
+        text-align: center;
+        overflow: hidden;
+    }
+    .textCardStyle{
+        font-family: 'Ysabeau', sans-serif;
+        font-size: 1.2rem;
+        padding: 2rem;
+    }
+
+    .navinvis{
+        width: 10%;
+    }
     .card{
         display: flex;
         flex-direction: column;
@@ -530,7 +674,7 @@
         padding: 0.3rem;
         border-radius: 10%;
         font-family: 'Ysabeau', sans-serif;
-        font-size: 2rem;
+        font-size: 0.8rem;
         margin-bottom: 0.5rem;
     }
     
@@ -541,7 +685,76 @@
         border-radius: 10%;
         font-family: 'Ysabeau', sans-serif;
         
-        font-size: 1.3rem;
+        font-size: 0.6rem;
         font-weight: bold;
     }
+
+    .textCard{
+        margin-right: 2.5rem;
+        margin-left: 2.5rem;
+        margin-top: 5rem;
+        background-color: rgb(206, 206, 206);
+        width: 80%;
+        display: flex;
+        object-fit: contain;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border: 1px solid black;
+        margin-bottom: 2rem;
+    }
+    .textCard2{
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+        background-color: rgba(206, 206, 206, 0);
+        width: 50%;
+        max-height: 10%;
+        display: flex;
+        object-fit:fill;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+
+    .newscontainer{
+        /*     height: 100svh; */
+            width: 100%;
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .newsparagraph{
+            width: 75%;
+            height: 50%;
+            margin-top: 5rem;
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        
+        .newsheadline{
+            font-family: 'Ysabeau', sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-bottom: 2px solid black;
+            width: 50%;
+            margin-left: 2rem;
+        }
+        
+        .textNphoto{
+            display: flex;
+            overflow: hidden;
+            /* align-items: baseline; */
+        }
+        
+        .newsparagraphtext{
+            font-family: 'Ysabeau', sans-serif;
+            font-size: 1rem;
+            padding: 1rem;
+            margin-left: 1rem;
+        }
+        
+        .newsphoto{
+            display: none;
+        }
 }
