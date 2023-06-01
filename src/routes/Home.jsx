@@ -44,7 +44,7 @@ function Home(){
               <div className={styles.cardContainer}>
                 <Card 
                 imgname={house1}
-                title='Buy E Home'
+                title='Buy a Home'
                 para='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ut quia sapiente ea minima.'
                 />  
                 <Card 

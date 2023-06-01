@@ -67,7 +67,7 @@ function Layout() {
                     <Link className={styles.navlink} to='/AKKS/under'>Company Info</Link>
                     <Link className={styles.navlink} to='/AKKS/under'>Financial Info</Link>
                     <Link className={styles.navlink} to='/AKKS/under'>Help</Link>
-                    <div className={styles.navlink} to='/AKKS/under'><Login/></div>
+                    <div className={styles.navlink}><Login/></div>
             </div>
 
             <Outlet/>

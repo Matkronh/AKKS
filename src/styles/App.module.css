@@ -137,9 +137,6 @@
     }
     
     .card:hover{
-        width: 18.1%;
-        height: 100.1%;
-        overflow: hidden;
         background-color: rgb(39, 39, 39);
         color: #fff;
     }
@@ -689,6 +686,7 @@
         margin: 0 0.8rem;
         color: black;
     }
+    
     
     .cardTitle{
         margin: auto;
