@@ -58,11 +58,6 @@ function Home(){
                 para='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero error non dignissimos ex repellendus, eum, porro nihil quidem iusto veniam fugiat libero delectus natus quod! Nemo quo deleniti nihil minus?'
                 imgname={profilepic}
                 />
-
-
-                <div className={styles.footer}>
-
-                </div>
         </div>
       </div>
     )

@@ -1,6 +1,7 @@
 import { Link, Outlet } from 'react-router-dom'
 
 import styles from '../styles/App.module.css'
+import Footer from '../parts/Footer'
 
 function Layout() {
     return(
@@ -19,6 +20,8 @@ function Layout() {
             </div>
 
             <Outlet/>
+
+            <Footer/>
         </>
     )
 }

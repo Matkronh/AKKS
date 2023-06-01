@@ -7,6 +7,8 @@
         position: relative;
         top: 4rem;
     }
+
+    /* NAV BAR */
     
     .navbar{
         height: 4rem;
@@ -62,7 +64,24 @@
     .navlink:hover{
         background-color: aquamarine;
     }
+
+    /* FOOTER */
+    .footer{
+        height: 8rem;
+        position: relative;
+        top: 4rem;
+    }
+
+    .invisfooter{
+        height: 4rem;
+    }
+    .subfooter{
+        height: 4rem;
+        background-color: rgba(235, 233, 233, 0.87);
+    }
     
+    /* PARA + HEADER */
+
     .paracontainer{
         height: 50svh;
     }
@@ -76,7 +95,6 @@
     
     }
     
-    
     .logo{
         max-width: 75%;
         height: auto;
@@ -86,63 +104,8 @@
         background-color: #fff;
     }
     
-    .textContainer{
-        /* height: 75svh; */
-        display: flex;
-        margin-top: 5rem;
-        margin-left: 10rem;
-        margin-right: 10rem;
-        justify-content: center;
-    }
-    
-    .textCard{
-        margin-right: 2.5rem;
-        margin-left: 2.5rem;
-        background-color: rgb(206, 206, 206);
-        width: 40%;
-        display: flex;
-        object-fit: contain;
-        overflow: hidden;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        border: 1px solid black;
-    }
-    .textCard2{
-        margin-right: 2.5rem;
-        margin-left: 2.5rem;
-        background-color: rgba(206, 206, 206, 0);
-        width: 40%;
-        display: flex;
-        object-fit:fill;
-        overflow: hidden;
-        border-radius: 50%;
-        border: 1px solid black;
-    }
-    
-    .textCardStyle{
-        font-family: 'Ysabeau', sans-serif;
-        font-size: 2rem;
-        padding: 2rem;
-    }
-    
-    .profilepicture{
-        /* max-width: 50%; */
-        margin: auto;
-        /* object-fit: contain; */
-    }
-    
-    
-    .footer{
-        height: 20svh;
-        margin-top: 5rem;
-        background-color: #fff;
-        bottom: 0;
-        position: relative;
-    }
-    
-    .body{
-        height: 50svh;
-    }
-    
+    /* CARD SECTION */
+
     .cardContainer{
         display: flex;
         width: 100%;
@@ -207,6 +170,58 @@
         font-size: 1.3rem;
         font-weight: bold;
     }
+
+    /* TEXT CARD SECTION */
+    
+    .textContainer{
+        /* height: 75svh; */
+        display: flex;
+        margin-top: 5rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        justify-content: center;
+    }
+    
+    .textCard{
+        margin-right: 2.5rem;
+        margin-left: 2.5rem;
+        background-color: rgb(206, 206, 206);
+        width: 75%;
+        display: flex;
+        object-fit: contain;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border: 1px solid black;
+    }
+    
+    .textCardStyle{
+        font-family: 'Ysabeau', sans-serif;
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    .textCardFlex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .pictureblock{
+        width: 50%;
+        object-fit: contain;
+        border-radius: 50%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 1px solid black;
+    }
+
+    .invisblock{
+        width: 50%;
+        height: 50%;
+    }
+    
     
     
     /* NEWS SECTION */
@@ -689,30 +704,55 @@
         font-weight: bold;
     }
 
+    .textContainer{
+        display: flex;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        justify-content: center;
+    }
+    
     .textCard{
-        margin-right: 2.5rem;
-        margin-left: 2.5rem;
-        margin-top: 5rem;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
         background-color: rgb(206, 206, 206);
-        width: 80%;
+        width: 75%;
         display: flex;
         object-fit: contain;
         overflow: hidden;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         border: 1px solid black;
-        margin-bottom: 2rem;
     }
-    .textCard2{
-        margin-right: 1.5rem;
-        margin-left: 1.5rem;
-        background-color: rgba(206, 206, 206, 0);
-        width: 50%;
-        max-height: 10%;
+    
+    .textCardStyle{
+        font-family: 'Ysabeau', sans-serif;
+        font-size: 0.5rem;
+        padding: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        display:inline-flex;
+    }
+
+    .textCardFlex{
         display: flex;
-        object-fit:fill;
-        overflow: hidden;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .pictureblock{
+        width: 80%;
+        object-fit: contain;
         border-radius: 50%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         border: 1px solid black;
+    }
+
+    .invisblock{
+        width: 50%;
+        height: 50%;
     }
 
     .newscontainer{

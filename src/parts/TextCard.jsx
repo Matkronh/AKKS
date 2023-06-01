@@ -6,10 +6,14 @@ function TextCard(props){
         <div className={styles.textContainer}>
             <div className={styles.textCard}>
                 <p className={styles.textCardStyle}>{props.para}</p>
+                <div className={styles.textCardFlex}>
+                    <img className={styles.pictureblock} src={props.imgname}/>
+                    <div className={styles.invisblock}/>
+                </div>
             </div>
 
-            <div className={styles.textCard2}>
-                <img className={styles.profilepicture} src={props.imgname}/>
+            <div className={styles.asd}>
+                
             </div>
         </div>
     )
