@@ -10,36 +10,41 @@ import profilepic from '../img/mm.jpg'
 import TextCard from '../parts/TextCard';
 import MediaQuery from 'react-responsive'
 
-function Home(){
-    return(
-        <div className={styles.container}>
 
-        <div className={styles.hero}>
-        <MediaQuery maxWidth={600}>
-          <Parallax blur={0} bgImage={bodyPicture} bgImageAlt="sky photo over some houses" strength={100}>
-            <div className={styles.paracontainer}>
-              <div className={styles.header}>
-                <img src={headerLogo} className={styles.logo}/>
-              </div>
-            </div>
-          </Parallax>
-          </MediaQuery>
-          <MediaQuery minWidth={600}>
-          <Parallax blur={0} bgImage={bodyPicture} bgImageAlt="sky photo over some houses" strength={300}>
-            <div className={styles.paracontainer}>
-              <div className={styles.header}>
-                <img src={headerLogo} className={styles.logo}/>
-              </div>
-            </div>
-          </Parallax>
-          </MediaQuery>
-        </div>
+function Home(){
+
+ 
+
+    return(
+      <div>
+        <div className={styles.container}>
+          <div className={styles.hero}>
+            <MediaQuery maxWidth={600}>
+              <Parallax blur={0} bgImage={bodyPicture} bgImageAlt="sky photo over some houses" strength={100}>
+                <div className={styles.paracontainer}>
+                  <div className={styles.header}>
+                    <img src={headerLogo} className={styles.logo}/>
+                  </div>
+                </div>
+              </Parallax>
+            </MediaQuery>
+
+            <MediaQuery minWidth={600}>
+              <Parallax blur={0} bgImage={bodyPicture} bgImageAlt="sky photo over some houses" strength={300}>
+                <div className={styles.paracontainer}>
+                  <div className={styles.header}>
+                    <img src={headerLogo} className={styles.logo}/>
+                  </div>
+                </div>
+              </Parallax>
+            </MediaQuery>
+          </div>
         
-        <div>
+          <div>
               <div className={styles.cardContainer}>
                 <Card 
                 imgname={house1}
-                title='Buy a Home'
+                title='Buy E Home'
                 para='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ut quia sapiente ea minima.'
                 />  
                 <Card 
@@ -59,7 +64,8 @@ function Home(){
                 imgname={profilepic}
                 />
         </div>
-      </div>
+      </div> 
+    </div>
     )
 }
 

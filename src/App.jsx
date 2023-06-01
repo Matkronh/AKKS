@@ -3,6 +3,9 @@ import Layout from './layout/Layout'
 import News from './routes/News'
 import Home from './routes/Home'
 import UnderConstruction from './routes/Under'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
 
@@ -18,6 +21,7 @@ function App() {
           </Route>
         </Routes>
       </Router>
+      <ToastContainer position="top-right" />
     </>
   )
 }

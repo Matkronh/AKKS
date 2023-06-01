@@ -8,6 +8,13 @@
         top: 4rem;
     }
 
+    .btninvis{
+        height: 25%;
+        displaY: inline-flex;
+        justify-content: center;
+        margin: auto;
+    }
+
     /* NAV BAR */
     
     .navbar{
