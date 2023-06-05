@@ -42,7 +42,7 @@ function Layout() {
                     <Link className={styles.navlogotext} to='/AKKS'>AKKS</Link>
                 </div>
                 <div className={styles.navinvis}/>
-                <a className={styles.navlink}>Admin Panel</a>
+                <a className={styles.navlink2}>ADMIN</a>
 
                     <Link className={styles.navlink} to='/AKKS/news'>News</Link>
                     <Link className={styles.navlink} to='/AKKS/under'>Company Info</Link>

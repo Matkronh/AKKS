@@ -1,6 +1,7 @@
 import firebase from '../firebase';
 import  styles from '../styles/App.module.css'
 import { isEmailAllowed } from '../emailUtils';
+import storeUsername from '../userUtils'
 
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -15,6 +16,9 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         const email = user.email;
+        const username = user.displayName;
+
+        storeUsername(username);
 
         if(isEmailAllowed(email)) {
           console.log('Logged in user:', user);

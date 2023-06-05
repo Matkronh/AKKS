@@ -67,6 +67,23 @@
         overflow: hidden;
         white-space: nowrap;
     }
+
+    .navlink2{
+        justify-self: left;
+        font-family: 'Ysabeau', sans-serif;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        /* width: 10%; */
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.9rem;
+        text-align: left;
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        overflow: hidden;
+        white-space: nowrap;
+    }
     
     .navlink:hover{
         background-color: aquamarine;
@@ -229,6 +246,58 @@
     
     
     /* NEWS SECTION */
+
+    .newsFlex{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .newsHeader{
+        width: 100%;
+        margin: auto;
+        font-family: 'Ysabeau', sans-serif;
+        text-align: center;
+        font-size: 6rem;
+        margin-bottom: 4rem;
+    }
+
+    .newsforminput{
+        width: 25%;
+        height: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .newsformtextarea{
+        width: 50%;
+        height: 10rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .newsformbtn{
+        width: 10%;
+        height: 3rem;
+        border-radius: 5%;
+        color: #fff;
+        background-color: grey;
+        font-family: 'Ysabeau', sans-serif;
+        font-size: 1.5rem;
+        padding: 0.4rem;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    
+    .newsformbtn:hover{
+        background-color: aqua;
+        color: black;
+    }
+
+    .formstyle{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     
     .newscontainer{
     /*     height: 100svh; */
@@ -237,6 +306,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .newslist{
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
     
     .newsparagraph{
@@ -259,6 +334,7 @@
     .textNphoto{
         display: flex;
         overflow: hidden;
+        flex-direction: column;
         /* align-items: baseline; */
     }
     
@@ -282,6 +358,12 @@
     
     .emptydiv{
         height: 20svh;
+    }
+
+    .usersigned{
+        font-family: 'Ysabeau', sans-serif;
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
     }
     
     /* Construction */
@@ -443,6 +525,7 @@
         .textNphoto{
             display: flex;
             overflow: hidden;
+            flex-direction: column;
             /* align-items: baseline; */
         }
         
@@ -618,6 +701,7 @@
         .textNphoto{
             display: flex;
             overflow: hidden;
+            flex-direction: column;
             /* align-items: baseline; */
         }
         
@@ -789,6 +873,7 @@
         .textNphoto{
             display: flex;
             overflow: hidden;
+            flex-direction: column;
             /* align-items: baseline; */
         }
         
