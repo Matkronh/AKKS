@@ -15,21 +15,17 @@ const NewsForm = () => {
       return;
     }
 
-    // Get the current user's username from local storage
     const username = localStorage.getItem('username');
-
-    // Store the news data in the database
     const database = getDatabase();
     const newsRef = ref(database, 'news');
     const newNews = {
       title,
       paragraph,
       username,
-      timestamp: { '.sv': 'timestamp' }, // Use { '.sv': 'timestamp' } for server timestamp
+      timestamp: { '.sv': 'timestamp' }, 
     };
     push(newsRef, newNews);
 
-    // Clear the form inputs
     setTitle('');
     setParagraph('');
   };

@@ -15,7 +15,6 @@ const NewsList = () => {
       setUser(user);
     });
 
-    // Clean up the listener when the component is unmounted
     return () => {
       unsubscribe();
     };
@@ -65,7 +64,7 @@ const NewsList = () => {
 
   const formatTimestamp = (timestamp) => {
     const date = new Date(timestamp);
-    return date.toLocaleString(); // Adjust the date format as needed
+    return date.toLocaleString();
   };
 
   return (
