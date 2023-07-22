@@ -6,6 +6,7 @@ import UnderConstruction from './routes/Under'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import EmailForm from './routes/Contactus'
+import EmailAddForm from './routes/EmailAddForm'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route path='news' element={<News />}/>
             <Route path='under' element={<UnderConstruction />}/>
             <Route path='contact' element={<EmailForm />}/>
+            <Route path='acess' element={<EmailAddForm />}/>
             <Route path='*' element={<h1>404</h1>}/>
           </Route>
         </Routes>

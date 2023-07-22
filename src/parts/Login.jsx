@@ -23,6 +23,7 @@ const Login = () => {
         if(isEmailAllowed(email)) {
           console.log('Logged in user:', user);
           toast.success('Successfully logged in!');
+          window.location.reload();
         } else {
           throw new Error('Access Denied');
         }

@@ -924,3 +924,9 @@
             display: none;
         }
 }
+
+.accessRequestForm{
+    position: relative;
+    top: 6rem;
+    height: 10rem;
+}
