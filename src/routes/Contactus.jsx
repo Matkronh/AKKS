@@ -18,16 +18,15 @@ const Contactus = () => {
 
     setLoading(true);
 
-    const recipientEmail = 'akksbusinessinquiry@gmail.com'; // Update with the desired recipient email
+    const recipientEmail = 'akksbusinessinquiry@gmail.com'; 
     const mailtoUrl = `mailto:${recipientEmail}?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(message)}`;
     window.open(mailtoUrl);
 
-    // Redirect to the main page after the email is sent
     setTimeout(() => {
       window.location.href = '/AKKS/';
-    }, 3000); // Adjust the delay as needed
+    }, 3000);
   };
 
   return (

@@ -18,12 +18,12 @@ function News(){
             const email = user.email;
 
             if(isEmailAllowed(email)){
-                // User is signed in
+                // bruker logges inn
                 setUser(user);
             }
         } else {
-           // User is signed in but the email is not allowed
-        firebase.auth().signOut(); // Sign out the user
+           // bruker sin mail er ikke whitelistet og logges ikke inn
+        firebase.auth().signOut();
         setUser(null);
         }
       });
@@ -32,7 +32,7 @@ function News(){
     }, []);
 
     return(
-
+        //om bruker er logges inn får han newsForm der han kan legge til nyheter til database og slette de, om han ikke er logget inn får han bare opp newslist.
         <div className={styles.newscontainer}>
             {user ? 
                 <div className={styles.newscontainer}>

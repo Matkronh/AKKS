@@ -1,6 +1,6 @@
 import firebase from '../firebase';
 import styles from '../styles/App.module.css'
-
+//log-ut metode og button
 const Logout = () => {
   const logout = () => {
     firebase.auth().signOut()

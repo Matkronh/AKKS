@@ -11,7 +11,7 @@ import Logout from '../parts/Logout';
 import { isEmailAllowed } from '../emailUtils';
 
 function Layout() {
-
+//useeffect for å sjekke om bruker er logget inn, viser forskjellig layout om bruker er/ikke er.
     const [user, setUser] = useState(null);
 
     useEffect(() => {

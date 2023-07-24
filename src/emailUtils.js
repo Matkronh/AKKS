@@ -7,7 +7,7 @@ const saveAllowedEmailsToLocalStorage = (emails) => {
   localStorage.setItem('allowedEmails', JSON.stringify(emails));
 };
 
-
+//array som lister whitelistede emailer, kan legge til hardkodede emails her.
 let allowedEmails = [
   'serz25905@gmail.com',
   'akksbusinessinquiry@gmail.com',

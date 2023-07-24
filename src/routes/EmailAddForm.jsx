@@ -15,6 +15,7 @@ const EmailAddForm = () => {
     }
 
     const emailAdded = addToAllowedEmails(newEmail);
+    //adder email til email array som whitelister den
     if (emailAdded) {
       setNewEmail(''); 
       setSuccessMessage('Email has been added to the whitelist.');
@@ -24,6 +25,7 @@ const EmailAddForm = () => {
   };
 
   const handleClearWhitelist = () => {
+    //fjerner whitelistet email fra local storage
     localStorage.removeItem('allowedEmails');
     alert('Whitelisted emails cleared successfully.');
     window.location.reload();
@@ -38,7 +40,7 @@ const EmailAddForm = () => {
           value={newEmail}
           onChange={(e) => setNewEmail(e.target.value)}
         />
-        <button type="submit">Add Email</button>
+        <button type="submit">Add Email(local storage only for testing purposes)</button>
       </form>
       {successMessage && <p>{successMessage}</p>}
       <button type="button" onClick={handleClearWhitelist}>

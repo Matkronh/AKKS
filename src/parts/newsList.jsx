@@ -40,23 +40,18 @@ const NewsList = () => {
     const handleData = (snapshot) => {
       const newsData = snapshot.val();
 
-      // Convert the news data object to an array
       const newsArray = Object.keys(newsData || {}).map((key) => ({
         id: key,
         ...newsData[key],
       }));
 
-      // Reverse the order of the news array
       const reversedNewsArray = newsArray.reverse();
 
-      // Update the news state with the reversed array
       setNews(reversedNewsArray);
     };
 
-    // Listen for changes in the news data
     onValue(newsRef, handleData);
 
-    // Clean up the listener when the component is unmounted
     return () => {
       off(newsRef, handleData);
     };
