@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { addToAllowedEmails } from '../emailUtils';
 import styles from '../styles/App.module.css'
 

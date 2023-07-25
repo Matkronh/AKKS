@@ -1,12 +1,12 @@
 import styles from '../styles/App.module.css'
 import { Parallax } from 'react-parallax';
-import headerLogo from '../img/akks-holding-eiendom-as-high-resolution-logo-color-on-transparent-background.png'
-import bodyPicture from '../img/avi-waxman-f9qZuKoZYoY-unsplash.jpg'
+import headerLogo from '../img/akks-holding-eiendom-as-high-resolution-logo-color-on-transparent-background.webp'
+import bodyPicture from '../img/avi-waxman-f9qZuKoZYoY-unsplash.webp'
 import Card from '../parts/Card'
-import house1 from '../img/house1.jpg'
-import house2 from '../img/house2.jpg'
-import house3 from '../img/house3.jpg'
-import profilepic from '../img/mm.jpg'
+import house1 from '../img/house1.webp'
+import house2 from '../img/house1.webp'
+import house3 from '../img/house3.webp'
+import profilepic from '../img/mm.webp'
 import TextCard from '../parts/TextCard';
 import MediaQuery from 'react-responsive'
 

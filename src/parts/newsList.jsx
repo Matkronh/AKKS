@@ -46,7 +46,7 @@ const NewsList = () => {
       }));
 
       const reversedNewsArray = newsArray.reverse();
-
+      console.log("news loaded")
       setNews(reversedNewsArray);
     };
 

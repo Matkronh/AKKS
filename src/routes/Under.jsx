@@ -1,5 +1,5 @@
 import styles from '../styles/App.module.css'
-import underConstruction from '../img/underconstruction.jpg'
+import underConstruction from '../img/underconstruction.webp'
 
 function UnderConstruction(){
     return(
