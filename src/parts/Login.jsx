@@ -26,9 +26,9 @@ const Login = () => {
           console.log('Logged in user:', user);
           toast.success('Successfully logged in!');
           /* window.location.reload(); */
-          /* setTimeout(() => {
+          setTimeout(() => {
             window.location.href = '/AKKS/';
-          }, 1000); */
+          }, 1000);
         } else {
           throw new Error('Access Denied');
         }
