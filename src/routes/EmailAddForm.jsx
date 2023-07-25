@@ -32,7 +32,7 @@ const EmailAddForm = () => {
   };
 
   return (
-    <div class={styles.accessRequestForm}>
+    <div className={styles.accessRequestForm}>
       <form onSubmit={handleSubmit}>
         <input
           type="email"

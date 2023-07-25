@@ -22,9 +22,13 @@ const Login = () => {
 
         if(isEmailAllowed(email)) {
           //melding om at bruker har logget inn og laster inn siden pånytt
+          /* window.location.href = '/AKKS/'; */
           console.log('Logged in user:', user);
           toast.success('Successfully logged in!');
-          window.location.reload();
+          /* window.location.reload(); */
+          /* setTimeout(() => {
+            window.location.href = '/AKKS/';
+          }, 1000); */
         } else {
           throw new Error('Access Denied');
         }
