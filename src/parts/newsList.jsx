@@ -10,6 +10,8 @@ const NewsList = () => {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
+    console.log('Fetching news data...');
+
     const auth = getAuth();
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setUser(user);
@@ -38,6 +40,8 @@ const NewsList = () => {
     const newsRef = ref(database, 'news');
 
     const handleData = (snapshot) => {
+      console.log('handleData function executed');
+
       const newsData = snapshot.val();
 
       const newsArray = Object.keys(newsData || {}).map((key) => ({
@@ -46,11 +50,13 @@ const NewsList = () => {
       }));
 
       const reversedNewsArray = newsArray.reverse();
-      console.log("news loaded")
       setNews(reversedNewsArray);
+      console.log('News data fetched successfully...');
     };
 
-    onValue(newsRef, handleData);
+    onValue(newsRef, handleData, (error) => {
+      console.error('Error fetching news data:', error);
+    });
 
     return () => {
       off(newsRef, handleData);
@@ -74,7 +80,9 @@ const NewsList = () => {
                 <span className={styles.usersigned}>Posted by: {item.username}</span>
                 <p className={styles.usersigned}>Published: {formatTimestamp(item.timestamp)}</p>
               </div>
-              {isEmailAllowed(user?.email) && (<button className={styles.newsformbtn} onClick={() => handleRemove(item.id)}>Remove</button>)}
+              {isEmailAllowed(user?.email) && (
+                <button className={styles.newsformbtn} onClick={() => handleRemove(item.id)}>Remove</button>
+              )}
             </div>
           </div>
         </div>
