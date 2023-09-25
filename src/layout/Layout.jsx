@@ -47,7 +47,7 @@ function Layout() {
                     <Link className={styles.navlink} to='/AKKS/news'>News</Link>
                     <Link className={styles.navlink} to='/AKKS/under'>Company Info</Link>
                     <Link className={styles.navlink} to='/AKKS/contact'>Contact Us</Link>
-                    <Link className={styles.navlink} to='/AKKS/acess'>Request Acess</Link>
+                    {/* <Link className={styles.navlink} to='/AKKS/acess'>Request Acess</Link> */}
                     <div className={styles.navlink}><Logout/></div>
             </div>
 
@@ -66,7 +66,7 @@ function Layout() {
                     <Link className={styles.navlink} to='/AKKS/news'>News</Link>
                     <Link className={styles.navlink} to='/AKKS/under'>Company Info</Link>
                     <Link className={styles.navlink} to='/AKKS/contact'>Contact Us</Link>
-                    <Link className={styles.navlink} to='/AKKS/acess'>Request Acess</Link>
+                    {/* <Link className={styles.navlink} to='/AKKS/acess'>Request Acess</Link> */}
                     <div className={styles.navlink}><Login/></div>
             </div>
 

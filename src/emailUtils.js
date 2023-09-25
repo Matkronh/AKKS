@@ -11,6 +11,7 @@ const saveAllowedEmailsToLocalStorage = (emails) => {
 let allowedEmails = [
   'serz25905@gmail.com',
   'akksbusinessinquiry@gmail.com',
+  'akkseiendomogholding@outlook.com',
 ];
 
 const localAllowedEmails = getAllowedEmailsFromLocalStorage();
